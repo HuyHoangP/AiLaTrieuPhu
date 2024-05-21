@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#99000000"
+    tools:context=".view.activity.MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/purple"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:text="Thông báo"/>
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="5dp"
+                android:paddingHorizontal="20dp"
+                android:paddingTop="20dp"
+                android:textSize="18sp"
+                android:text="Bạn muốn dừng cuộc chơi tại đây?\nTiền thưởng nhận được:"/>
+            <TableRow
+                android:id="@+id/trBounty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="3dp"
+                android:layout_marginHorizontal="70dp">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="25dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_money"/>
+                <TextView
+                    android:id="@+id/tvBounty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="200000"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#673AB7"
+                    android:textSize="22sp"
+                    android:layout_weight="2"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp">
+                <Button
+                    android:id="@+id/btStop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Dừng cuộc chơi"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#673AB7"
+                    android:textSize="15sp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quay lại"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:backgroundTint="#673AB7"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

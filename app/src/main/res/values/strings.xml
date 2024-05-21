@@ -1,0 +1,8 @@
+<resources>
+    <string name="OPENAI_API_KEY">sk-proj-6K4xobHLAAZEyfs7S9MNT3BlbkFJesbU20p7X1s29v78QpDA</string>
+    <string name="app_name">AiLaTrieuPhu</string>
+    <string name="help_message">Bạn muốn sử dụng trợ giúp</string>
+    <string name="txt_message">How to make a android app by kotlin? How to make a android app by kotlin? How to make a android app by kotlin? How to make a android app by kotlin? How to make a android app by kotlin? How to make a android app by kotlin? How to make a android app by kotlin?</string>
+    <string name="rules_normal">- Người chơi phải trả lời 15 câu hỏi với độ khó tăng dần (không giới hạn thời gian).\n- Mỗi câu hỏi có một mức tiền thưởng đi kèm, tăng dần theo thứ tự.\n- Có ba mốc quan trọng là câu số 5 (mốc thứ nhất), câu số 10 (mốc thứ hai) và câu số 15 (mốc cuối).\n- Người chơi có quyền chơi tiếp hoặc dừng cuộc chơi.\n- Nếu dừng cuộc chơi, họ sẽ nhận số tiền tương ứng với câu hỏi đã trả lời đúng trước đó.\n- Nếu chơi tiếp mà trả lời sai, số tiền thưởng bị đi xuống mốc quan trọng trước đó và người chơi phải ra về với số tiền này.\n- Người chơi có 4 quyền trợ giúp sau và có thể sử dụng bất cứ lúc nào nếu không biết câu trả lời hoặc chưa chắc chắn với suy nghĩ của mình.\n- Trong một câu hỏi, người chơi có quyền dùng nhiều quyền trợ giúp.</string>
+    <string name="rules_ranked">- Người chơi trả lời vô hạn các câu hỏi ngẫu nhiên\n- Mỗi câu trả lời đúng được cộng 1 điểm\n- Người chơi có 30s để trả lời 1 câu hỏi\n- Người chơi không được dùng bất kỳ sự trợ giúp nào\n- Khi trả lời sai, phần thi sẽ kết thúc và số điểm hiện tại người chơi đạt được sẽ được lưu lại\n- Số điểm cao nhất trong các lần chơi sẽ được lên bảng xếp hạng</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926436333829",
+    "project_id": "ailatrieuphu-151e8",
+    "storage_bucket": "ailatrieuphu-151e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926436333829:android:7d07bf5b60f842db49bf6c",
+        "android_client_info": {
+          "package_name": "com.hhp.ailatrieuphu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbSy_ecZYEAvCn9GKZfqpftAtt-2hdMIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

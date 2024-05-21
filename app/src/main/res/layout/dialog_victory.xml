@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#99000000"
+    tools:context=".view.activity.MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/purple"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:text="Thông báo"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="0dp">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/ic_laivansam"/>
+                <TextView
+                    android:id="@+id/tvBounty"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Chúc mừng bạn đã chiến thắng!\nThật là vô đối!!!"
+                    android:textStyle="bold"
+                    android:paddingStart="5dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#673AB7"
+                    android:textSize="20sp"
+                    android:layout_weight="2"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp">
+                <Button
+                    android:id="@+id/btGoToMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Về Menu"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#673AB7"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quay lại"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:backgroundTint="#673AB7"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frMain"
+    android:paddingBottom="20dp"
+    android:background="@mipmap/bg_home"
+    tools:context=".view.activity.MainActivity">
+<!--    <ProgressBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:indeterminate="true"-->
+<!--        android:indeterminateDuration="5000"-->
+<!--        android:indeterminateDrawable="@anim/rotate_circle"-->
+<!--        android:paddingVertical="50dp"-->
+<!--        android:paddingHorizontal="20dp"/>-->
+</FrameLayout>

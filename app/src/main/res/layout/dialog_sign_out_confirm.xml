@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="#99000000"
+    tools:context=".view.activity.MainActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/purple"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:textSize="22sp"
+                android:text="Thông báo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:padding="20dp"
+                android:textSize="18sp"
+                android:text="Bạn có chắc chắn rằng muốn đăng xuất tài khoản?"/>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+                <Button
+                    android:id="@+id/btSignOut"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Đăng xuất"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#673AB7"
+                    android:textSize="16sp"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quay lại"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:backgroundTint="#673AB7"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

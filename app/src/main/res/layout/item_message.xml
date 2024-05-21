@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <TableRow
+        android:id="@+id/trResponse"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivCaller"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:padding="5dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_person"/>
+        <TextView
+            android:id="@+id/tvResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="270dp"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:backgroundTint="#009688"
+            android:background="@drawable/bg_rounded_corner_message"
+            android:text="@string/txt_message"/>
+    </TableRow>
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tvRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:maxWidth="300dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:background="@drawable/bg_rounded_corner_message"
+        android:text="@string/txt_message"/>
+
+</FrameLayout>
