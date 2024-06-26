@@ -1,6 +1,5 @@
 package com.hhp.ailatrieuphu.viewmodel;
 
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.hhp.ailatrieuphu.api.request.ChatReq;
@@ -12,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BotGPTDialogVM extends BaseViewModel {
-    private MutableLiveData<Message> botMessageLD = new MutableLiveData<>();
+    private final MutableLiveData<Message> botMessageLD = new MutableLiveData<>();
     private MutableLiveData<Integer> timerLD;
     private Thread thread;
 

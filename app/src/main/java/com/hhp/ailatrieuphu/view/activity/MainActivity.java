@@ -1,23 +1,14 @@
 package com.hhp.ailatrieuphu.view.activity;
 
-import static com.hhp.ailatrieuphu.viewmodel.activityvm.MainActVM.TAG;
+import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
 import androidx.core.view.WindowCompat;
 
-import android.os.Bundle;
-import android.util.Log;
-
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.hhp.ailatrieuphu.MediaManager;
-import com.hhp.ailatrieuphu.R;
 import com.hhp.ailatrieuphu.databinding.ActivityMainBinding;
 import com.hhp.ailatrieuphu.view.base.BaseActivity;
 import com.hhp.ailatrieuphu.view.fragment.SplashFragment;
-import com.hhp.ailatrieuphu.viewmodel.CommonVM;
 import com.hhp.ailatrieuphu.viewmodel.activityvm.MainActVM;
 
 public class MainActivity extends BaseActivity<ActivityMainBinding, MainActVM> {
@@ -53,5 +44,10 @@ public class MainActivity extends BaseActivity<ActivityMainBinding, MainActVM> {
     @Override
     public ActivityMainBinding initViewBinding() {
         return ActivityMainBinding.inflate(getLayoutInflater());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
     }
 }

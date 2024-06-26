@@ -2,7 +2,6 @@ package com.hhp.ailatrieuphu.view.fragment;
 
 import static com.hhp.ailatrieuphu.view.base.BaseActivity.SLIDE_UP_AND_DOWN;
 
-import android.graphics.Color;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
