@@ -12,21 +12,23 @@ If you guys want to pull this and give ti a try, use this account:
 
 ## Features
 
-### 1. Load songs from your phone
-Users touch the gear icon on top-right to go to setting screen. Then choose scan music options to load song from your phone. They can also move to the photos main screen from here<br/>
-- There is a toast will pop-up when load song operation is complete
-- I used "Cursor" interface to query audio flie in MediaStore External Storage, then save them to local database
-<div align="center"><b>SETTINGS SCREEN</b></div><br/>
+### 1. Log in, Sign up
+Users register an account with email, then log in to the app
+- I used Firebase Authentication to do this function
+<div align="center"><b>LOG IN AND SIGN UP SCREEN</b></div><br/>
 <div align="center">
-   <img width="294" alt="SettingScreen" src="https://github.com/user-attachments/assets/fb407959-8576-4168-bd07-a412d6238999">
+   <img width="294" alt="LogInScreen" src="https://github.com/user-attachments/assets/c05ad897-e3ef-415d-91ec-f32a8338477c">
+   <img width="292" alt="SignUpScreen" src="https://github.com/user-attachments/assets/6d18d608-1ffa-4ebf-8cfa-e38bd35b3e1f">
 </div>
 
-### 2. Search Functionality
-Users touch the search icon next to gear icon on top-right to go to search screen. Quickly search for songs, albums, or artists by using the built-in search bar. Results are displayed in real-time as you type.<br/>
-- I used SearchView and RecycleView to do this function
+
+
+### 2. Manage your account
+Users can change password, display name and avatar in setting screen
+- I used Realtime Database and Firebase Storage to do this function
 <div align="center"><b>SEARCH SCREEN</b></div><br/>
 <div align="center">
-   <img width="287" alt="SearchScreen" src="https://github.com/user-attachments/assets/8a1b5a0c-9f53-4832-acf6-39dd131b1033">
+   <img width="292" alt="AccountScreen" src="https://github.com/user-attachments/assets/5123438d-230b-42cc-9c10-284a5eaa66b7">
 </div>
 
 ### 3. Playlist Creation
