@@ -36,8 +36,8 @@ Test your knowledge in normal mode! Full MC voice, no time limit and able to use
 - In Call support option, I used ChatGPT API to make things more interesting
 <div align="center"><b>PLAYING SCREEN</b></div><br/>
 <div align="center">
-<img width="300" alt="PrepareScreen" src="https://github.com/user-attachments/assets/191b6b7f-dc5c-41e8-bac4-6b8aa7bbe147">
-<img width="300" alt="PlayingScreen1" src="https://github.com/user-attachments/assets/cb7a15cc-71c3-4e94-a389-2252565f0021">
+<img width="300" alt="PrepareScreen" height="630" src="https://github.com/user-attachments/assets/191b6b7f-dc5c-41e8-bac4-6b8aa7bbe147">
+<img width="300" alt="PlayingScreen1" height="630 "src="https://github.com/user-attachments/assets/cb7a15cc-71c3-4e94-a389-2252565f0021">
 <img width="300" alt="UseHelpScreen" height="630" src="https://github.com/user-attachments/assets/97068ae9-53d6-44af-a85a-4d2938bedc70">
 <img width="300" alt="AudienceDialog" height="630" src="https://github.com/user-attachments/assets/b8fe845f-583d-4e2d-82e1-31785439f6db">
 
