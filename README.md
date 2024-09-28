@@ -24,21 +24,23 @@ Users register an account with email, then log in to the app
 
 
 ### 2. Manage your account
-Users can change password, display name and avatar in setting screen
+Users can change password, display name and avatar in settings screen
 - I used Realtime Database and Firebase Storage to do this function
-<div align="center"><b>SEARCH SCREEN</b></div><br/>
+<div align="center"><b>SETTINGS SCREEN</b></div><br/>
 <div align="center">
    <img width="292" alt="AccountScreen" src="https://github.com/user-attachments/assets/5123438d-230b-42cc-9c10-284a5eaa66b7">
 </div>
 
-### 3. Playlist Creation
-Create custom playlists by selecting tracks from the library. Playlists can be saved for future playback, edited, or deleted.<br/>
-- Users can switch between add or delete mode on config dialog
-- I used SharedPreference to save users' songs
-<div align="center"><b>PLAYLIST SCREEN</b></div><br/>
+### 3. Play casually game!
+Test your knowledge in normal mode! Full MC voice, no time limit and able to use support center in tough question.<br/>
+- In Call support option, I used ChatGPT API to make things more interesting
+<div align="center"><b>PLAYING SCREEN</b></div><br/>
 <div align="center">
-   <img width="297" alt="PlaylistScreen" src="https://github.com/user-attachments/assets/01140497-1ff0-4e37-a680-277761866f82">
-   <img width="298" alt="ConfigDialog" src="https://github.com/user-attachments/assets/f13b5f50-4c5d-47a0-b2d4-216d3811bb9c">
+<img width="301" alt="PrepareScreen" src="https://github.com/user-attachments/assets/191b6b7f-dc5c-41e8-bac4-6b8aa7bbe147">
+<img width="292" alt="PlayingScreen1" src="https://github.com/user-attachments/assets/cb7a15cc-71c3-4e94-a389-2252565f0021">
+   <img width="293" alt="AudienceScreen" src="https://github.com/user-attachments/assets/8494d28f-5388-431b-9dca-471265edd78a">
+<img width="293" alt="UseHelpScreen" src="https://github.com/user-attachments/assets/97068ae9-53d6-44af-a85a-4d2938bedc70">
+
 </div>
 
 
