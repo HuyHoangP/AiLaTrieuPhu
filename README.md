@@ -1,14 +1,13 @@
-# Media Player App 🎵 📸
+# Ai là triệu phú 
 
-Hi there!<br/>
-This is my media app that allows users to manage their favorite songs and memorable photos. In short:<br/>
-- Full-functional music app
-- Save image and create your memories like Google Photos
-<br/><br/>
-<div align="center"><b>MUSICS AND PHOTOS MAIN SCREEN</b></div><br/>
+Dive into a world of tricky questions with 'Who Wants to Be a Millionaire'. Test your knowledge, compete best score with friends, and become the ultimate champion!<br/>
+If you guys want to pull this and give ti a try, use this account:
+- Username: user1@gmail.com
+- Password: test123
+<br/>
 <div align="center">
-   <img width="294" height="630" alt="MusicMainScreen" src="https://github.com/user-attachments/assets/e11e3260-fe52-4cd5-99dc-31324b990b49">
-   <img width="297" alt="PhotoMainScreen" src="https://github.com/user-attachments/assets/7bb23dc3-d089-4d75-9ef9-5ea150aabad4">
+   <img width="296" alt="MenuScreen" src="https://github.com/user-attachments/assets/58b62cee-e82b-4476-bdc7-b183db0d83c8">
+   <img width="295" alt="PlayScreen" src="https://github.com/user-attachments/assets/e3c9c3cd-2351-4504-837f-e667c79b6eab">
 </div>
 
 ## Features
@@ -98,7 +97,3 @@ Play your created memory like Google Photos!
 <div align="center">
    <img width="301" alt="MemoryScreen" src="https://github.com/user-attachments/assets/9ab014e0-0685-469c-8640-98cb5ec3a76f">
 </div>
-
-Username: user1@gmail.com
-
-Password: test123
