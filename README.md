@@ -38,8 +38,8 @@ Test your knowledge in normal mode! Full MC voice, no time limit and able to use
 <div align="center">
 <img width="301" alt="PrepareScreen" src="https://github.com/user-attachments/assets/191b6b7f-dc5c-41e8-bac4-6b8aa7bbe147">
 <img width="292" alt="PlayingScreen1" src="https://github.com/user-attachments/assets/cb7a15cc-71c3-4e94-a389-2252565f0021">
-   <img width="293" alt="AudienceScreen" src="https://github.com/user-attachments/assets/8494d28f-5388-431b-9dca-471265edd78a">
 <img width="293" alt="UseHelpScreen" src="https://github.com/user-attachments/assets/97068ae9-53d6-44af-a85a-4d2938bedc70">
+<img width="293" alt="AudienceDialog" src="https://github.com/user-attachments/assets/b8fe845f-583d-4e2d-82e1-31785439f6db">
 
 </div>
 
