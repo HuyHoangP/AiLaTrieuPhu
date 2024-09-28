@@ -7,18 +7,12 @@ import android.widget.Toast;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.core.content.ContextCompat;
-import androidx.lifecycle.Observer;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.hhp.ailatrieuphu.App;
-import com.hhp.ailatrieuphu.CommonUtils;
 import com.hhp.ailatrieuphu.MediaManager;
 import com.hhp.ailatrieuphu.R;
-import com.hhp.ailatrieuphu.database.entity.Money;
 import com.hhp.ailatrieuphu.database.entity.Question;
 import com.hhp.ailatrieuphu.databinding.FragmentPlayBinding;
 import com.hhp.ailatrieuphu.view.OnPlayCallback;
@@ -38,7 +32,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -254,7 +247,7 @@ public class PlayFragment extends BaseFragment<FragmentPlayBinding, PlayFrgVM> i
         if(viewModel.isRanked()){
             countDown();
         } else {
-//            binding.frTimer.setVisibility(View.INVISIBLE);
+            binding.frTimer.setVisibility(View.INVISIBLE);
         }
         if(index < AUDIO_QUES_ID.length){
             MediaManager.getInstance().playMC(AUDIO_QUES_ID[index], null);
@@ -284,7 +277,7 @@ public class PlayFragment extends BaseFragment<FragmentPlayBinding, PlayFrgVM> i
             if (timer < 0) return;
             binding.tvTimer.setText(String.format("%s", timer));
             if (timer == 0) {
-
+                gameOver(null);
             }
         });
     }
@@ -339,14 +332,6 @@ public class PlayFragment extends BaseFragment<FragmentPlayBinding, PlayFrgVM> i
         } else if (viewModel.checkMoney(amount)) {
             viewModel.updateMoney(amount);
         }
-    }
-
-    private void saveScoreToDB(int score) {
-        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("list_user");
-        String path = FirebaseAuth.getInstance().getCurrentUser().getEmail().replace(".", "-");
-        Map<String, Object> mapUpdate = new HashMap<>();
-        mapUpdate.put("bestScore", score);
-        dbRef.child(path).updateChildren(mapUpdate);
     }
 
     private void useAudience() {
@@ -425,9 +410,6 @@ public class PlayFragment extends BaseFragment<FragmentPlayBinding, PlayFrgVM> i
     private void openCalledDialog() {
         viewModel.setOnClickEnabled(false);
         MediaManager.getInstance().playMC(R.raw.help_called, mediaPlayer -> {
-//            ConsulterDialog dialog = new ConsulterDialog(viewModel, PlayFragment.HELP_CALL);
-//            viewModel.setCalledDialog(dialog);
-//            viewModel.getCalledDialog().show(getChildFragmentManager(), ConsulterDialog.TAG);
             BotGPTDialog dialog = new BotGPTDialog();
             dialog.show(getChildFragmentManager(), BotGPTDialog.TAG);
             viewModel.setOnClickEnabled(true);

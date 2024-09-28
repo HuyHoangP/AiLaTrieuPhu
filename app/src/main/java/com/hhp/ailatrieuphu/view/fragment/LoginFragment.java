@@ -6,12 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.hhp.ailatrieuphu.R;
@@ -48,18 +43,15 @@ public class LoginFragment extends BaseFragment<FragmentLoginBinding, CommonVM> 
             binding.tvWarning.setVisibility(View.VISIBLE);
         } else {
             binding.pbLoading.setVisibility(View.VISIBLE);
-            FirebaseAuth.getInstance().sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
-                @Override
-                public void onComplete(@NonNull Task<Void> task) {
-                    if(task.isSuccessful()){
-                        final Snackbar snackbar = Snackbar.make(binding.tvSignUp, "VERIFICATION HAS BEEN SENT TO YOUR EMAIL", Snackbar.LENGTH_SHORT);
-                        snackbar.setAction("DISMISS", view -> snackbar.dismiss());
-                        snackbar.show();
-                    } else {
-                        Toast.makeText(context, "Something is wrong, please try again.", Toast.LENGTH_SHORT).show();
-                    }
-                    binding.pbLoading.setVisibility(View.GONE);
+            FirebaseAuth.getInstance().sendPasswordResetEmail(email).addOnCompleteListener(task -> {
+                if(task.isSuccessful()){
+                    final Snackbar snackbar = Snackbar.make(binding.tvSignUp, "VERIFICATION HAS BEEN SENT TO YOUR EMAIL", Snackbar.LENGTH_SHORT);
+                    snackbar.setAction("DISMISS", view -> snackbar.dismiss());
+                    snackbar.show();
+                } else {
+                    Toast.makeText(context, "Something is wrong, please try again.", Toast.LENGTH_SHORT).show();
                 }
+                binding.pbLoading.setVisibility(View.GONE);
             });
         }
     }
@@ -73,19 +65,16 @@ public class LoginFragment extends BaseFragment<FragmentLoginBinding, CommonVM> 
         String password = binding.edtPassword.getText().toString();
         if(email.isEmpty() || password.isEmpty()) return;
         binding.pbLoading.setVisibility(View.VISIBLE);
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                binding.pbLoading.setVisibility(View.GONE);
-                if(task.isSuccessful()){
-                    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                    Log.i(TAG, "onComplete: " + user.getEmail());
-                    callback.showFragment(MenuFragment.TAG, null, false);
-                } else {
-                    Log.w(TAG, "createUserWithEmail: Failure", task.getException());
-                    Toast.makeText(context, "Something is wrong. Please try again.",
-                            Toast.LENGTH_SHORT).show();
-                }
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+            binding.pbLoading.setVisibility(View.GONE);
+            if(task.isSuccessful()){
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                Log.i(TAG, "onComplete: " + user.getEmail());
+                callback.showFragment(MenuFragment.TAG, null, false);
+            } else {
+                Log.w(TAG, "createUserWithEmail: Failure", task.getException());
+                Toast.makeText(context, "Something is wrong. Please try again.",
+                        Toast.LENGTH_SHORT).show();
             }
         });
     }
